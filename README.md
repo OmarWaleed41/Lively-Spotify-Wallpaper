@@ -13,3 +13,5 @@ get your client-ID and secret-key and add them to the auth.py script.
 and you're basically good to go
 add the index.html to Lively using the `+` button and run `the run_serv.bat` file.
 enjoy ❤ .
+
+also if you don't like the font you can just add your desired font in the fonts folder and change the path in the `styles.css` script

@@ -8,6 +8,7 @@ First you need some libraries:
   `pip install spotipy flask flask-cors`
 
 To get the App working you'll need to get a spotify dev account through here: https://developer.spotify.com/ .
+create an app, choose a name and description, put the Redirect URIs as `http://localhost:8888/callback` and lastly choose `Web Api`
 get your client-ID and secret-key and add them to the auth.py script.
 
 and you're basically good to go

@@ -7,9 +7,9 @@ If you like "Extra" customization like me, i've created this wallpaper to go alo
 First you need some libraries: 
   `pip install spotipy flask flask-cors`
 
-To get the App working you'll need to get a spotify dev account through here: https://developer.spotify.com/ 
-get your client-ID and secret-key and add them to the auth.py script
+To get the App working you'll need to get a spotify dev account through here: https://developer.spotify.com/ .
+get your client-ID and secret-key and add them to the auth.py script.
 
 and you're basically good to go
-add the index.html to Lively using the `+` button and run `the run_serv.bat` file
-enjoy ❤ 
+add the index.html to Lively using the `+` button and run `the run_serv.bat` file.
+enjoy ❤ .

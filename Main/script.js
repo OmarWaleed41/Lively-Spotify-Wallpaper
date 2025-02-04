@@ -5,11 +5,6 @@ const colorThief = new ColorThief();
 const root = document.documentElement;
 let lastAlbumCover = null;
 
-const rgbToHex = (r, g, b) => '#' + [r, g, b].map(x => {
-    const hex = x.toString(16);
-    return hex.length === 1 ? '0' + hex : hex;
-}).join('');
-
 function updateDisplay(data) {
     if (data.changed) {
         // console.log('Track changed:', data.current_track_name);

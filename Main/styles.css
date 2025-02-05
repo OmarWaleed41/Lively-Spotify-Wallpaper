@@ -26,7 +26,7 @@ body{
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: rgb(10, 10, 10);
+  background: rgb(0, 0, 0);
   /* transition: all ease-in 1s; */
   /* background: radial-gradient(circle, var(--dom-color-shad) 0%, rgba(0,0,0,1) 100%); */
   color: white;
@@ -35,7 +35,12 @@ body{
 /* #line_cont{
   position: absolute;
 } */
-
+[id^="line"] {
+  width: 2px;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+}
 /* left side */
 #line1{
   width: 2px;
@@ -43,7 +48,6 @@ body{
   background-color: var(--color1);
   box-shadow: 0px 0px 20px 2px var(--color1);
   transform: translateX(-400px) skew(10deg);
-  position: absolute;
 }
 #line2{
   width: 2px;
@@ -51,7 +55,6 @@ body{
   background-color: var(--color2);
   box-shadow: 0px 0px 20px 2px var(--color2);
   transform: translateX(-500px) skew(30deg);
-  position: absolute;
 }
 #line3{
   width: 2px;
@@ -59,7 +62,6 @@ body{
   background-color: var(--color3);
   box-shadow: 0px 0px 20px 2px var(--color3);
   transform: translateX(-550px) skew(-15deg);
-  position: absolute;
 }
 #line4{
   width: 2px;
@@ -67,7 +69,6 @@ body{
   background-color: var(--color4);
   box-shadow: 0px 0px 20px 2px var(--color4);
   transform: translateX(-600px) skew(20deg);
-  position: absolute;
 }
 #line5{
   width: 2px;
@@ -75,7 +76,6 @@ body{
   background-color: var(--color5);
   box-shadow: 0px 0px 20px 2px var(--color5);
   transform: translateX(-800px) skew(33deg);
-  position: absolute;
 }
 #line6{
   width: 2px;
@@ -83,7 +83,6 @@ body{
   background-color: var(--color6);
   box-shadow: 0px 0px 20px 2px var(--color6);
   transform: translateX(-900px) skew(32deg);
-  position: absolute;
 }
 
 /* right side */
@@ -93,7 +92,6 @@ body{
   background-color: var(--color1);
   box-shadow: 0px 0px 20px 2px var(--color1);
   transform: translateX(400px) skew(-10deg);
-  position: absolute;
 }
 #line8{
   width: 2px;
@@ -101,7 +99,6 @@ body{
   background-color: var(--color2);
   box-shadow: 0px 0px 20px 2px var(--color2);
   transform: translateX(500px) skew(-30deg);
-  position: absolute;
 }
 #line9{
   width: 2px;
@@ -109,7 +106,6 @@ body{
   background-color: var(--color3);
   box-shadow: 0px 0px 20px 2px var(--color3);
   transform: translateX(550px) skew(15deg);
-  position: absolute;
 }
 #line10{
   width: 2px;
@@ -117,7 +113,6 @@ body{
   background-color: var(--color4);
   box-shadow: 0px 0px 20px 2px var(--color4);
   transform: translateX(600px) skew(-20deg);
-  position: absolute;
 }
 #line11{
   width: 2px;
@@ -125,7 +120,6 @@ body{
   background-color: var(--color5);
   box-shadow: 0px 0px 20px 2px var(--color5);
   transform: translateX(800px) skew(-33deg);
-  position: absolute;
 }
 #line12{
   width: 2px;
@@ -133,7 +127,6 @@ body{
   background-color: var(--color6);
   box-shadow: 0px 0px 20px 2px var(--color6);
   transform: translateX(900px) skew(-32deg);
-  position: absolute;
 }
 .container{
   height: 100vh;
@@ -142,6 +135,7 @@ body{
   align-content: center;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
 #cover{
   width: 300px;
@@ -158,4 +152,3 @@ body{
 #artist{
   margin-top: 0.1rem
 }
-  
